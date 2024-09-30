@@ -1,0 +1,12 @@
+.sidenav-container {
+  height: 100vh;
+}
+
+mat-sidenav {
+  width: 180px;
+}
+
+mat-toolbar {
+  justify-content: space-between;
+  padding: 0 50px;
+}

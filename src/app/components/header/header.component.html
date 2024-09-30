@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+
+  <span>Star Wars Movies</span>
+  <button mat-icon-button (click)="toggleSidenav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav [(opened)]="sidenavOpened" mode="side">
+    <p><a routerLink="/">Home</a></p>
+    <p><a routerLink="/filmes">Filmes</a></p>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
